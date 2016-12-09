@@ -30,10 +30,8 @@ module.exports = {
                         title = header.text();
                         break;
                     case "h2":
-                        h2 += 1;
-                        h3 = h4 = 0;
-                        text = h2 + ". " + header.text();
-                        header.text(text);
+												title_id = header.attr("id");
+												title = header.text();
                         toc.push({
                             name: header.text(),
                             url: header.attr("id"),
