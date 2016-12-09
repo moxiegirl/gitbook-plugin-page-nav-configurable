@@ -1,12 +1,12 @@
 #anchors-navbar{
     border: 1px solid #ccc;
-    box-shadow: 5px 5px 2px #ccc;
-    padding: 5px 10px;
+    box-shadow: 3px 3px 1px #ccc;
+    padding: 4px 8px;
     position: fixed;
     background-color: #fff;
     right: 50px;
     top: 68px;
-    font-size: 12px;
+    font-size: 10px;
     white-space: nowrap;
     z-index: 999;
     cursor: pointer;
@@ -33,9 +33,9 @@
     border: 1px solid #ccc;
     z-index: 999;
     cursor: pointer;
-    font-size: 12px;
-    padding: 5px 10px;
-    box-shadow: 5px 5px 2px #ccc;
+    font-size: 10px;
+    padding: 4px 8px;
+    box-shadow: 3px 3px 1px #ccc;
     background-color: #fff;
     color: #333;
 }

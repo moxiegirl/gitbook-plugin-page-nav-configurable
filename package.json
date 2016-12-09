@@ -1,7 +1,6 @@
 {
   "name": "gitbook-plugin-page-nav-configurable",
   "version": "1.0.5",
-  "description": "Add a TOC navigator to each page in a book.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +14,7 @@
     "plugin",
     "ftp"
   ],
-  "author": "moxigirl",
+  "author": "moxiegirl",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/moxiegirl/page-nav-configurable.git"

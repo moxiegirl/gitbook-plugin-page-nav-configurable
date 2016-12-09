@@ -1,4 +1,4 @@
-# Page navigator configurable
+# Page Navigator
 
 This plugin extends Zhangzq's [original navigator
 code](https://github.com/zhangzq/gitbook-plugin-navigator#readme).  It is in
