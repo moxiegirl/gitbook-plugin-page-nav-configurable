@@ -23,6 +23,7 @@ module.exports = {
             $(':header').each(function(i, elem) {
                 var header = $(elem);
                 header.attr("id", get_id(header.text()));
+                text = header.text();
 
                 switch (header[0].name) {
                     case "h2":

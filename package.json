@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-page-nav-configurable",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Add a TOC navigator to each page in a book.",
   "main": "index.js",
   "scripts": {
