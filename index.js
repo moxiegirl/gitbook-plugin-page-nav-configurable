@@ -26,12 +26,12 @@ module.exports = {
 
                 switch (header[0].name) {
                     case "h1":
-                        title_id = header.attr("id");
-                        title = header.text();
+                        // do nothing, we don't want to include that
+                        // title_id = header.attr("id");
+                        // title = header.text();
                         break;
                     case "h2":
-												title_id = header.attr("id");
-												title = header.text();
+                        header.text(text);
                         toc.push({
                             name: header.text(),
                             url: header.attr("id"),
@@ -39,10 +39,6 @@ module.exports = {
                         });
                         break;
                     case "h3":
-                        h3 += 1;
-                        h4 = 0;
-
-                        text = h2 + "." + h3 + ". " + header.text();
                         header.text(text);
                         if (toc.length == 0) {
                             toc.push({name: "none", url: "", children: []});
@@ -54,9 +50,6 @@ module.exports = {
                         });
                         break;
                     case "h4":
-                        h4 += 1;
-                        text = h2 + "." + h3 + "." + h4 + ". " + header.text();
-                        header.text(text);
                         if (toc.length == 0) {
                             toc.push({name: "none", url: "", children: []});
                         }
