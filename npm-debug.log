@@ -3,23 +3,107 @@
 2 info using npm@3.10.8
 3 info using node@v6.9.1
 4 verbose publish [ '.' ]
-5 verbose stack Error: Invalid version: ".1"
-5 verbose stack     at Object.fixVersionField (/usr/local/lib/node_modules/npm/node_modules/normalize-package-data/lib/fixer.js:191:13)
-5 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/normalize-package-data/lib/normalize.js:32:38
-5 verbose stack     at Array.forEach (native)
-5 verbose stack     at normalize (/usr/local/lib/node_modules/npm/node_modules/normalize-package-data/lib/normalize.js:31:15)
-5 verbose stack     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:349:5)
-5 verbose stack     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:124:5)
-5 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:311:12
-5 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
-5 verbose stack     at tryToString (fs.js:455:3)
-5 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)
-6 verbose cwd /Users/mary/gitbookdev/gitbook-plugin-page-nav-configurable
-7 error Darwin 15.5.0
-8 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
-9 error node v6.9.1
-10 error npm  v3.10.8
-11 error Invalid version: ".1"
-12 error If you need help, you may report this error at:
-12 error     <https://github.com/npm/npm/issues>
-13 verbose exit [ 1, true ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/mary/gitbookdev/gitbook-plugin-page-nav-configurable',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/mary/.npm/gitbook-plugin-page-nav-configurable/1.0.5/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/mary/.npm correctMkdir not in flight; initializing
+10 info lifecycle gitbook-plugin-page-nav-configurable@1.0.5~prepublish: gitbook-plugin-page-nav-configurable@1.0.5
+11 silly lifecycle gitbook-plugin-page-nav-configurable@1.0.5~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/mary/.npm/gitbook-plugin-page-nav-configurable/1.0.5/package.tgz',
+12 verbose tar pack   '/Users/mary/gitbookdev/gitbook-plugin-page-nav-configurable' ]
+13 verbose tarball /Users/mary/.npm/gitbook-plugin-page-nav-configurable/1.0.5/package.tgz
+14 verbose folder /Users/mary/gitbookdev/gitbook-plugin-page-nav-configurable
+15 verbose addLocalTarball adding from inside cache /Users/mary/.npm/gitbook-plugin-page-nav-configurable/1.0.5/package.tgz
+16 verbose correctMkdir /Users/mary/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd gitbook-plugin-page-nav-configurable@1.0.5
+18 verbose afterAdd /Users/mary/.npm/gitbook-plugin-page-nav-configurable/1.0.5/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/mary/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/mary/.npm/gitbook-plugin-page-nav-configurable/1.0.5/package/package.json written
+21 silly publish { name: 'gitbook-plugin-page-nav-configurable',
+21 silly publish   version: '1.0.5',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/moxiegirl/page-nav-configurable.git' },
+21 silly publish   keywords: [ 'gitbook', 'plugin', 'ftp' ],
+21 silly publish   author: { name: 'moxiegirl' },
+21 silly publish   license: 'GPL-3.0',
+21 silly publish   bugs: { url: 'https://github.com/moxiegirl/page-nav-configurable.git' },
+21 silly publish   homepage: 'https://github.com/moxiegirl/page-nav-configurable.git',
+21 silly publish   dependencies: { cheerio: '*' },
+21 silly publish   engines: { gitbook: '*' },
+21 silly publish   readme: '# Page Navigator\n\nThis plugin extends Zhangzq\'s [original navigator\ncode](https://github.com/zhangzq/gitbook-plugin-navigator#readme).  It is in\ntest mode. will add a `table of content` navigator on the right top of each\npage, and a `return to top` button.\n\n\n## Config `book.json`\n\n```js\n{\n    plugins: ["navigator"],\n}\n```\n\n\n## or Install locally\n\n```\n$ npm install gitbook-plugin-navigator --save\n```\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '0149240c98da30c3c5434e0f2ae66f0097e5ff01',
+21 silly publish   description: 'This plugin extends Zhangzq\'s [original navigator code](https://github.com/zhangzq/gitbook-plugin-navigator#readme).  It is in test mode. will add a `table of content` navigator on the right top of each page, and a `return to top` button.',
+21 silly publish   _id: 'gitbook-plugin-page-nav-configurable@1.0.5',
+21 silly publish   _shasum: '2b99d572c0b0c101f80982dd380e3206587b400d',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name gitbook-plugin-page-nav-configurable
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'gitbook-plugin-page-nav-configurable',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'gitbook-plugin-page-nav-configurable',
+26 silly mapToRegistry   name: 'gitbook-plugin-page-nav-configurable',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://registry.npmjs.org/gitbook-plugin-page-nav-configurable
+28 verbose publish registryBase http://registry.npmjs.org/
+29 silly publish uploading /Users/mary/.npm/gitbook-plugin-page-nav-configurable/1.0.5/package.tgz
+30 verbose request uri http://registry.npmjs.org/gitbook-plugin-page-nav-configurable
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 1:21:52 PM
+33 verbose request using bearer token for auth
+34 verbose request id 3183c491907c2835
+35 http request PUT http://registry.npmjs.org/gitbook-plugin-page-nav-configurable
+36 http 403 http://registry.npmjs.org/gitbook-plugin-page-nav-configurable
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Fri, 09 Dec 2016 21:21:53 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-sea1921-SEA',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1481318512.929286,VS0,VE297',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/mary/.npm/registry.npmjs.org/gitbook-plugin-page-nav-configurable on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.5." : gitbook-plugin-page-nav-configurable
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12)
+41 verbose statusCode 403
+42 verbose pkgid gitbook-plugin-page-nav-configurable
+43 verbose cwd /Users/mary/gitbookdev/gitbook-plugin-page-nav-configurable
+44 error Darwin 15.5.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v6.9.1
+47 error npm  v3.10.8
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.5." : gitbook-plugin-page-nav-configurable
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
