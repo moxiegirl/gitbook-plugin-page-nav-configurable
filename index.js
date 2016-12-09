@@ -25,11 +25,6 @@ module.exports = {
                 header.attr("id", get_id(header.text()));
 
                 switch (header[0].name) {
-                    case "h1":
-                        // do nothing, we don't want to include that
-                        // title_id = header.attr("id");
-                        // title = header.text();
-                        break;
                     case "h2":
                         header.text(text);
                         toc.push({
@@ -44,19 +39,6 @@ module.exports = {
                             toc.push({name: "none", url: "", children: []});
                         }
                         toc[toc.length-1].children.push({
-                            name: header.text(),
-                            url: header.attr("id"),
-                            children: []
-                        });
-                        break;
-                    case "h4":
-                        if (toc.length == 0) {
-                            toc.push({name: "none", url: "", children: []});
-                        }
-                        if (toc[toc.length-1].children.length == 0) {
-                            toc[toc.length-1].children.push({name: "none", url: "", children: []});
-                        }
-                        toc[toc.length-1].children[toc[toc.length-1].children.length-1].children.push({
                             name: header.text(),
                             url: header.attr("id"),
                             children: []
