@@ -1,14 +1,14 @@
 {
-  "name": "gitbook-plugin-mytestnav",
+  "name": "gitbook-plugin-page-nav-configurable",
   "version": ".1",
-  "description": "add toc navigator",
+  "description": "Add a TOC navigator to each page in a book.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moxiegirl/gitbook-plugin-navigator.git"
+    "url": "git+https://github.com/moxiegirl/page-nav-configurable.git"
   },
   "keywords": [
     "gitbook",
@@ -18,9 +18,9 @@
   "author": "moxigirl",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/moxiegirl/gitbook-plugin-navigator.git"
+    "url": "https://github.com/moxiegirl/page-nav-configurable.git"
   },
-  "homepage": "https://github.com/moxiegirl/gitbook-plugin-navigator.git",
+  "homepage": "https://github.com/moxiegirl/page-nav-configurable.git",
   "dependencies": {
     "cheerio": "*"
   },
