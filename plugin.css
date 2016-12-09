@@ -6,7 +6,7 @@
     background-color: #fff;
     right: 50px;
     top: 68px;
-    font-size: 10px;
+    font-size: 11px;
     white-space: nowrap;
     z-index: 999;
     cursor: pointer;
@@ -33,7 +33,7 @@
     border: 1px solid #ccc;
     z-index: 999;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 11px;
     padding: 4px 8px;
     box-shadow: 3px 3px 1px #ccc;
     background-color: #fff;
