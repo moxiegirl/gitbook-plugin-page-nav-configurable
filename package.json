@@ -1,0 +1,30 @@
+{
+  "name": "gitbook-plugin-mytestnav",
+  "version": ".1",
+  "description": "add toc navigator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moxiegirl/gitbook-plugin-navigator.git"
+  },
+  "keywords": [
+    "gitbook",
+    "plugin",
+    "ftp"
+  ],
+  "author": "moxigirl",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/moxiegirl/gitbook-plugin-navigator.git"
+  },
+  "homepage": "https://github.com/moxiegirl/gitbook-plugin-navigator.git",
+  "dependencies": {
+    "cheerio": "*"
+  },
+  "engines": {
+    "gitbook": "*"
+  }
+}
