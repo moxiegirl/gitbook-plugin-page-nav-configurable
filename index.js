@@ -26,6 +26,10 @@ module.exports = {
                 text = header.text();
 
                 switch (header[0].name) {
+									case "h1":
+									 title_id = header.attr("id");
+									 title = "Top";
+							 	 	break;
                     case "h2":
                         header.text(text);
                         toc.push({
@@ -73,7 +77,7 @@ module.exports = {
                     html += "</ul>"
                 }
             }
-            html += "</ul></div><a href='#"+toc[0].url+"' id='goTop'><i class='fa fa-arrow-up'></i></a>";
+          //  html += "</ul></div><a href='#"+toc[0].url+"' id='goTop'><i class='fa fa-arrow-up'></i></a>";
 
 
             section.content = $.html() + html;
