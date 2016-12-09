@@ -55,7 +55,7 @@ module.exports = {
                 return section;
             }
 
-            var html = "<div id='anchors-navbar'><i class='fa fa-anchor'></i><ul><p><a href='#" + title_id +"'>" + title + "</a></p>";
+            var html = "<div id='anchors-navbar'><i class='fa fa-bars'></i><ul><p><a href='#" + title_id +"'>" + title + "</a></p>";
             for(var i=0;i<toc.length;i++){
                 html += "<li><a href='#"+toc[i].url+"'>"+toc[i].name+"</a></li>";
                 if(toc[i].children.length>0){
